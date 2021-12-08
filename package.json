@@ -25,7 +25,7 @@
   "main": "node/index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "cross-env BASE=/vuepress-demo/ vuepress build docs --clean-cache",
+    "docs:build": "cross-env BASE=/vuepress-plugin-live2d-plus/ vuepress build docs --clean-cache",
     "docs:serve": "serve docs/.vuepress/dist",
     "test": "jest",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue",
@@ -40,6 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
     "@yunquejs/release": "^0.1.4",
+    "cross-env": "^7.0.3",
     "chalk": "^4.1.2",
     "conventional-changelog-cli": "^2.1.1",
     "eslint": "^7.21.0",
