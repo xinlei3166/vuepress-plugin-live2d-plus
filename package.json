@@ -25,7 +25,7 @@
   "main": "node/index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs --clean-cache",
+    "docs:build": "cross-env BASE=/vuepress-demo/ vuepress build docs --clean-cache",
     "docs:serve": "serve docs/.vuepress/dist",
     "test": "jest",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue",
