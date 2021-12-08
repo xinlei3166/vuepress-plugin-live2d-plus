@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-live2d-plus",
-  "version": "0.1.0.beta",
+  "version": "0.1.0",
   "description": "vuepress plugin for live2d",
   "repository": {
     "type": "git",
