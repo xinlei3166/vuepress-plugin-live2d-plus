@@ -4,6 +4,8 @@
 
 vuepress-plugin-live2d-plus 是一个基于 Vuepress 2.x 的插件，它可以帮助你集成Live2D看板娘。
 
+## 提示
+已支持vuepress@2.0.0-beta.51版本
 
 ## 安装
 

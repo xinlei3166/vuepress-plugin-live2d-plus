@@ -1,4 +1,6 @@
-const { path } = require('@vuepress/utils')
+import { path, getDirname } from '@vuepress/utils'
+
+const __dirname = getDirname(import.meta.url)
 
 const defaultLive2dOptions = {
   enable: true,
@@ -20,15 +22,14 @@ const defaultLive2dOptions = {
   }
 }
 
-const live2dPlugin = (live2dOptions = {}, app) => {
+export const live2dPlugin = (live2dOptions = {}, app) => {
   return {
     name: 'vuepress-plugin-live2d-plus',
-    clientAppEnhanceFiles: path.resolve(__dirname, '../client/clientAppEnhance.js'),
-    clientAppSetupFiles: path.resolve(__dirname, '../client/clientAppSetupFiles.js'),
+    clientConfigFile: path.resolve(__dirname, '../client/config.js'),
     define: {
       __LIVE2D_OPTIONS__: { ...defaultLive2dOptions, ...live2dOptions }
     }
   }
 }
 
-module.exports = live2dPlugin
+export default live2dPlugin
