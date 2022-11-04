@@ -20,8 +20,10 @@ yarn add -D vuepress-plugin-live2d-plus
 .vuepress/config.js文件中使用插件
 
 ```js
+import { live2dPlugin } from 'vuepress-plugin-live2d-plus'
+
 plugins: [
-	['vuepress-plugin-live2d-plus']
+  live2dPlugin()
 ]
 ```
 
@@ -29,7 +31,7 @@ plugins: [
 
 ```js
 plugins: [
-	['vuepress-plugin-live2d-plus', {
+  live2dPlugin({
     enable: true,
     model: {
       url: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/hibiki/hibiki.model.json'
@@ -47,7 +49,7 @@ plugins: [
     react: {
       opacity: 0.8
     }
-  }]
+  })
 ]
 ```
 
