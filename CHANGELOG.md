@@ -1,3 +1,7 @@
+## [0.2.1](https://github.com/xinlei3166/vuepress-plugin-live2d-plus/compare/v0.2.0...v0.2.1) (2022-11-04)
+
+
+
 # [0.2.0](https://github.com/xinlei3166/vuepress-plugin-live2d-plus/compare/v0.1.0...v0.2.0) (2022-11-04)
 
 
