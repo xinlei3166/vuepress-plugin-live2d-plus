@@ -1,6 +1,7 @@
 {
   "name": "vuepress-plugin-live2d-plus",
   "version": "0.2.1",
+  "type": "module",
   "description": "vuepress plugin for live2d",
   "repository": {
     "type": "git",
@@ -41,7 +42,7 @@
     "@typescript-eslint/parser": "^4.17.0",
     "@yunquejs/release": "^0.1.4",
     "cross-env": "^7.0.3",
-    "chalk": "^4.1.2",
+    "chalk": "^5.1.2",
     "conventional-changelog-cli": "^2.1.1",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
